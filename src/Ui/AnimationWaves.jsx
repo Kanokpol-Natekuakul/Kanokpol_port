@@ -1,6 +1,6 @@
 function AnimationWaves() {
   return (
-    <div className="absolute bottom-0 w-full hidden  lg:block">
+    <div className="absolute bottom-0 w-full hidden lg:block">
       <svg
         viewBox="0 0 1440 280"
         className="wave w-full h-auto"
@@ -14,8 +14,8 @@ function AnimationWaves() {
             x2="100%"
             y2="100%"
           >
-            <stop offset="0%" stopColor="#14b8a6" />
-            <stop offset="100%" stopColor="#592af3" />
+            <stop offset="0%" stopColor="#ff6b35" />
+            <stop offset="100%" stopColor="#f7931e" />
           </linearGradient>
         </defs>
         <path
