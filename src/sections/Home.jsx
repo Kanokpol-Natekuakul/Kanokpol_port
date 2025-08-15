@@ -1,11 +1,10 @@
 import React from 'react'
 import profileimg from "../assets/profile.jpg"
 import { FaDownload } from 'react-icons/fa';
-import resumeeng from '../assets/resume_eng.pdf'
-import resumeth from '../assets/resume_th.pdf'
+import resume from '../assets/resume.pdf';
 
 function Home() {
-  return (
+return (
     <section id="home" className="min-h-screen flex flex-col justify-center items-center lg:flex-row-reverse gap-6 lg:gap-15 px-4 sm:px-6 lg:px-8">
         <div className="text-center z-10 px-2 sm:px-4">
             <img className="w-[280px] sm:w-[320px] md:w-[360px] lg:w-[400px] xl:w-[500px] border-0 mt-16 sm:mt-20 rounded-full shadow-lg shadow-red-500/30 lg:m-0 object-cover object-bottom hover:translate-y-1 transition-all duration-300 hover:shadow-red-orange" src={profileimg} alt="Profile Image" />
@@ -18,18 +17,18 @@ function Home() {
             </p>
             <div className='flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-4'>
                 <a className='bg-gradient-to-r from-red-500 to-orange-500 flex flex-row items-center justify-center py-2 sm:py-3 px-4 sm:px-6 rounded-lg hover:-translate-y-1 hover-shadow-red-orange font-medium transition-all duration-300 relative overflow-hidden w-full sm:w-auto text-sm sm:text-base' href="#contact">Contact Me</a>
-                <a className='bg-gradient-to-r from-red-500 to-orange-500 flex flex-row items-center justify-center py-2 sm:py-3 px-4 sm:px-6 rounded-lg hover:-translate-y-1 hover-shadow-red-orange font-medium transition-all duration-300 relative overflow-hidden w-full sm:w-auto text-sm sm:text-base' href={resumeth} download >
-                    <p>Resume Th</p>  
+                <a className='bg-gradient-to-r from-red-500 to-orange-500 flex flex-row items-center justify-center py-2 sm:py-3 px-4 sm:px-6 rounded-lg hover:-translate-y-1 hover-shadow-red-orange font-medium transition-all duration-300 relative overflow-hidden w-full sm:w-auto text-sm sm:text-base' href={resume} download >
+                    <p>Resume</p>  
                     <span className='h-4 sm:h-5 ml-2 sm:ml-3 text-lg sm:text-2xl text-white'>
                         <FaDownload />
                     </span>
                 </a>
-                <a className='bg-gradient-to-r from-red-500 to-orange-500 flex flex-row items-center justify-center py-2 sm:py-3 px-4 sm:px-6 rounded-lg hover:-translate-y-1 hover-shadow-red-orange font-medium transition-all duration-300 relative overflow-hidden w-full sm:w-auto text-sm sm:text-base' href={resumeeng} download >
+                {/* <a className='bg-gradient-to-r from-red-500 to-orange-500 flex flex-row items-center justify-center py-2 sm:py-3 px-4 sm:px-6 rounded-lg hover:-translate-y-1 hover-shadow-red-orange font-medium transition-all duration-300 relative overflow-hidden w-full sm:w-auto text-sm sm:text-base' href={resumeeng} download >
                     <p>Resume Eng</p>  
                     <span className='h-4 sm:h-5 ml-2 sm:ml-3 text-lg sm:text-2xl text-white'>
                         <FaDownload />
                     </span>
-                </a>
+                </a> */}
             </div>
         </div>
         

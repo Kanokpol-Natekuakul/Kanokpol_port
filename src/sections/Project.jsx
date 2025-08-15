@@ -6,11 +6,18 @@ import pokemonapi from '../assets/pokemonapi.png'
 import reactport from '../assets/reactport.png'
 import webport from '../assets/webport.png'
 import internship from '../assets/internship.png'
+import ecom from '../assets/ecom.png'
+import netflix from '../assets/netflix.png'
+
 
 function Project() {
     const [projects]=useState([
       {image: internship, name:"Internship",brief:"A personal Portfolio website built with React and Tailwind CSS with an automated deployment system.",tech: ["JavaScript", "React", "Tailwind CSS","Vite"],
         github: "https://github.com/Kanokpol-Natekuakul/Kanokpol_port"},
+      {image: ecom, name:"E-commerce",brief:"E-commerce Frontend application developed with React + Vite with complete features supporting buying and selling, product management, payment, and admin system.",tech: ["React", "Vite", "Tailwind CSS","Stripe"],
+        github: "https://github.com/Kanokpol-Natekuakul/ecom-web"},
+      {image: netflix, name:"NetflixClone",brief:"Netflix Clone web application developed with React and Vite featuring an authentication system and retrieving movie data from the TMDB API.",tech: ["JavaScript", "React", "Tailwind CSS","Firebase"],
+        github: "https://github.com/Kanokpol-Natekuakul/netflix_clone"},
       {image: futureshop, name:"FutureShop",brief:"An online store web application built with Vanilla HTML, CSS, and JavaScript, complete with a fully functional shopping cart system, and experiences from the futureskill workshop courses.",tech: ["HTML", "CSS", "JavaScript","DummyJSON API"],
         github: "https://github.com/Kanokpol-Natekuakul/Future-Shop_fs"},
       {image: gamesite, name:"GameHub",brief:"A modern gaming platform built with React, TypeScript, and responsive Tailwind CSS to discover, browse, and explore all types of games and platforms.",tech: ["React", "TypeScript", "Tailwind CSS"],
@@ -28,7 +35,7 @@ function Project() {
             <h2 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 sm:mb-8 lg:mb-12 bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent text-center'>
                 Features Projects
             </h2>
-             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6">
             {projects.map((project, index) => (
               <div
                 key={index}
@@ -36,7 +43,7 @@ function Project() {
               >
                 <h3 className="font-semibold text-base sm:text-lg lg:text-xl mb-2 sm:mb-3 lg:mb-4 bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">{project.name}</h3>
                 <p className="text-gray-300 mb-3 sm:mb-4 text-xs sm:text-sm lg:text-base leading-relaxed">{project.brief} </p>
-                   <div className="flex flex-wrap justify-center gap-1 sm:gap-2 mb-3 sm:mb-4">
+                  <div className="flex flex-wrap justify-center gap-1 sm:gap-2 mb-3 sm:mb-4">
                   {project.tech.map((tech, techIndex) => (
                     <span
                       key={techIndex}
