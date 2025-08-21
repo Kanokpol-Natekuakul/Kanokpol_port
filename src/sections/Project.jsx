@@ -25,7 +25,7 @@ function Project() {
       {image: pokemonapi, name:"PokemonApi",brief:"A React application for finding and storing favorite Pokemon using data from PokeAPI.",tech: ["React", "PokeAPI", "Axios ","Tailwind CSS"],
         github: "https://github.com/Kanokpol-Natekuakul/pokemonapi"},
       {image: reactport, name:"Portfolio Website - React Demo",brief:"A modern and beautiful personal portfolio website built with React and Vite, featuring impressive animation effects and interactivity, suitable for showcasing work, skills, and experiences from the futureskill workshop courses.",tech: ["React", "Vite", "Animation"],github: "https://github.com/Kanokpol-Natekuakul/vite-react_fs"},
-      {image: webport, name:"Portfolio Website ",brief:"The personal portfolio website of Kanokpol Natekuakul (Pol) that collects projects, skills, experience, and various certificates.", tech: ["HTML", "CSS", "JavaScript"],
+      {image: webport, name:"Old Portfolio Website ",brief:"The personal portfolio website of Kanokpol Natekuakul (Pol) that collects projects, skills, experience, and various certificates.", tech: ["HTML", "CSS", "JavaScript"],
         github: "https://github.com/Kanokpol-Natekuakul/Kanokpol-Natekuakul.github.io"},
     ])
   return (
